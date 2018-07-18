@@ -1,0 +1,132 @@
+\documentclass[presentation, 10pt, xcolor=dvipsnames]{beamer}
+%\usepackage[german]{babel} %die beiden Packages sind notwendig um ,, und so zu sehen
+\usepackage[utf8]{inputenc} %% für Mac
+\uselanguage{english}
+\languagepath{english}
+\usepackage{amscd,amsfonts,amsmath,amssymb,latexsym,amsthm,geometry,booktabs}
+\usepackage[mathscr]{eucal}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lmodern}
+    \usefonttheme[onlymath]{serif}
+
+\setbeamercovered{transparent}
+\setbeamertemplate{footline}[frame number]
+\usepackage{booktabs}
+\usepackage{tabularx}
+%\usepackage{caption}
+\usepackage{multirow}
+\usepackage{bigstrut}
+    \setlength\bigstrutjot{3pt}
+\usepackage{array}% http://ctan.org/pkg/array
+\newsavebox{\mybox}% Store some content in a box
+\newcolumntype{G}{@{}>{\begin{lrbox}{\mybox}}l<{\end{lrbox}}@{}}% a column that Gobbles it's entries
+\setbeamerfont{caption}{size=\footnotesize}
+%\usepackage{stata}
+\def\stlogscaled#1#2{\scalebox{#1}{\begin{minipage}{\hsize}
+    \begin{stlog}
+    \input{#2.log.tex}
+    \end{stlog}
+    \end{minipage}}}
+\mode<presentation>
+\usetheme{Hannover}%Berlin, classic, copenhagen, bars, Darmstadt, Dresden, Frankfurt, Ilmenau, lined, Malmoe, Montpellier, Singapore, Warsaw, Berkeley, Rochester
+%\usetheme[secheader]{Madrid}
+%\usecolortheme{lily}%seahorse, whale, dolphin, crane, beetle, rose, dove, fly, orchid, albatross, lily
+%color setting more or less matching U of A colors
+
+\setbeamercolor*{palette secondary}{use=structure,fg=red,bg=structure.fg!55!red}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=red!50!red}
+\setbeamercolor*{palette quarternary}{use=structure,fg=white,bg=structure.fg!55!red}
+\setbeamertemplate{navigation symbols}{}
+
+
+
+\usepackage{verbatim}
+
+\usepackage{times}
+\usepackage{eurosym}
+
+
+
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} 
+
+
+\title{General Introduction to GitHub}
+\author{Jakob Schwerter}
+\date{LEAD PhD Retreat\\ Rottenburg \\ \today }
+ \vspace{5em}
+\titlegraphic{\includegraphics[width=0.3\textwidth]{UT_WBMW_Rot_RGB.eps} \hspace{4em} \includegraphics[width=0.2\textwidth]{LEAD_Logo.jpg}} %<--- das sollte man noch besser machen k"onnen :)
+
+
+  
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>
+%    \frametitle{Overview}
+%    {
+%    \tableofcontents[currentsection]
+%        }
+%  \end{frame}
+%}
+%
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+%
+%\begin{frame}
+% \frametitle{Overview}
+%    {
+%    \tableofcontents %[currentsection]
+%        }
+%  \end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{GitHub}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[c]
+  \frametitle{GitHub?}
+\textit{GitHub is pretty much the go-to tool for crafting blogs and other websites, but not everyone gets onboard with it automatically. It pays to know why GitHub has high utility value before actually using it, as well as the small drawback that prospective users need to be aware of.} \\[2ex]
+\begin{itemize}
+	\item <1-> Repository hosting service with a web-based graphical interface
+	\\~\\ \item <2-> Number of collaboration features
+	\\~\\ \item <3-> Easy contribution of open source projects
+	\\~\\ \item <4-> Easy storage and presentation of your work
+	\\~\\ \item <5-> \hyperlink{http://jaschwer.github.io/}{http://jaschwer.github.io/}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[c]
+  \frametitle{Pros}
+\begin{itemize}
+	\item <1-> Easy contribution of open source projects
+	\\~\\ \item <2-> Easy project management, i.e. version control system
+	\\~\\ \item <3-> Free (mostly)
+	\\~\\ \item <4-> (Some of the) best documentation
+	\\~\\ \item <5-> Great for collaborating
+	\\~\\ \item <6-> Markdown (lightweight markup language)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+  \frametitle{Cons}
+\begin{itemize}
+	\item <1-> Leans towards programmers
+	\\~\\ \item <2-> Time and practice needed
+	\\~\\ \item <3-> Private repositories for 7\$ per month
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c] %Rückfolie
+\colorbox{Periwinkle}{\parbox{\textwidth}{\centering\vspace*{1.5cm} \parbox{15cm}{\color{white} {\huge Thank you!}\bigskip \bigskip \\ Contact: \bigskip \\ \textbf{Jakob Schwerter, M.Sc.} \bigskip \\ Mohlstra{\ss}e 36, 72074 T\"ubingen \\ Telephone: +49 7071 29 - 78 15 5\\ jakob.schwerter@uni-tuebingen.de}\vspace*{1.5cm}}}
+\end{frame}
+
+
+
+\end{document}
