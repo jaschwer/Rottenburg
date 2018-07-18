@@ -11,4 +11,6 @@ Writing in Markdown is rather easy compared to e.g. LaTex, but you can also use 
 
 *italic* and **bolt**. 
 
+Let's get a :beer: .
+
 
