@@ -9,6 +9,6 @@ Writing in Markdown is rather easy compared to e.g. LaTex, but you can also use 
 
 ### Subsubsection
 
-$\alpha$ *ist* ein **Parameter**. 
+*italic* and **bolt**. 
 
 
